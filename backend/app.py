@@ -31,7 +31,7 @@ app.config["MAIL_DEFAULT_SENDER"] = os.environ.get("MAIL_DEFAULT_SENDER", app.co
 mail = Mail(app)
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "mindcare-secret-key-change-in-prod")
-MONGO_URI   = os.environ.get("MONGO_URI", "mongodb+srv://menkamathur962:menka@mentalhealthsystem.cnlvw0r.mongodb.net/?appName=mentalHealthSystem")
+MONGO_URI   = os.environ.get("MONGO_URI")
 PASSWORD_RESET_SECRET = os.environ.get("PASSWORD_RESET_SECRET", SECRET_KEY)
 
 TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID", "").strip()
