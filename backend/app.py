@@ -45,9 +45,9 @@ if TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN:
 client = MongoClient(MONGO_URI)
 try:
     client.server_info()
-    print("MongoDB Connected ✅")
+    print("MongoDB Connected")
 except Exception as e:
-    print("MongoDB Error ❌", e)
+    print("MongoDB Error", e)
 
 db      = client["mindcare"]
 users   = db["users"]
